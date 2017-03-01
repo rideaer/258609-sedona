@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Педченко](https://up.htmlacademy.ru/adaptive/10/user/258609).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мусаэльян](https://up.htmlacademy.ru/adaptive/10/user/124940).
 
 ---
 
