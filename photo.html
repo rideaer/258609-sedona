@@ -10,7 +10,7 @@
       <button class="main-navigation__toggle main-navigation__toggle--close-menu">Закрыть меню меню</button>
       <ul class="main-navigation__list">
         <li class="main-navigation_item"><a href="#" class="main-navigation__link">Главная</a></li>
-        <li class="main-navigation_item"><a href="#" class="main-navigation__link">Фото и видое</a></li>
+        <li class="main-navigation_item main-navigation_item--active"><a href="#" class="main-navigation__link">Фото и видое</a></li>
         <li class="main-navigation_item"><a href="#" class="main-navigation__link">Форма отзыва</a></li>
         <li class="main-navigation_item"><a href="#" class="main-navigation__link">Html academy</a></li>
       </ul>
@@ -19,62 +19,54 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="wrapper">
-      <div class="wrapper__picture">
-        <img src="#" alt="Cedona" width="229" height="39">
-      </div>
-      <div class="text-block">
-        <h2 class="text-block__heading">
-          Фото и видео
-        </h2>
-        <p class="text-block_description">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
-      </div>
-    </section>
-    <section class="photo">
-      <div class="photo__sedona">
-        <div class="photo__picture">
-          <img src="#" alt="Фотография Седоны" width="280" height="280">
-        </div>
-        <h2 class="photo__heading">
+    <div class="intro">
+      <img class="intro__picture" src="#" alt="Cedona" width="229" height="39">
+    </div>
+    <div class="photos">
+      <h1 class="photos__title">
+        Фото и видео
+      </h1>
+      <p class="photos__description">
+        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+      </p>
+    </div>
+    <section class="photos__container">
+      <div class="photo">
+        <a href="#" class="photo__picture"><img src="#" alt="Фотография Седоны" width="280" height="280"></a>
+        <div class="photo__title">
           неродные просторы
-        </h2>
-        <p class="photo__author">
+        </div>
+        <div class="photo__author">
           Автор фото: Борис
-        </p>
-        <div class="photo__liks">
-          <a class="photo__like-btn" href="#">Like</a>
+        </div>
+        <div class="photo__likes">
+          <a class="photo__like-button" href="#">Like</a>
           <span>1350</span>
         </div>
       </div>
       <div class="photo__sedona">
-        <div class="photo__picture">
-          <img src="#" alt="Фотография Седоны" width="280" height="280">
-        </div>
-        <h2 class="photo__heading">
+        <a href="#" class="photo__picture"><img src="#" alt="Фотография Седоны" width="280" height="280"></a>
+        <div class="photo__heading">
           Местная растительность
-        </h2>
-        <p class="photo__author">
+        </div>
+        <div class="photo__author">
           Автор фото: Сергей
-        </p>
-        <div class="photo__liks">
-          <a class="photo__like-btn" href="#">Like</a>
+        </div>
+        <div class="photo__likes">
+          <a class="photo__like-button" href="#">Like</a>
           <span>143</span>
         </div>
       </div>
       <div class="photo__sedona">
-        <div class="photo__picture">
-          <img src="#" alt="Фотография Седоны" width="280" height="280">
-        </div>
-        <h2 class="photo__heading">
+        <a href="#" class="photo__picture"><img src="#" alt="Фотография Седоны" width="280" height="280"></a>
+        <div class="photo__heading">
           Дорога на север
-        </h2>
-        <p class="photo__author">
+        </div>
+        <div class="photo__author">
           Автор фото: Петр
-        </p>
-        <div class="photo__liks">
-          <a class="photo__like-btn" href="#">Like</a>
+        </div>
+        <div class="photo__likes">
+          <a class="photo__like-button" href="#">Like</a>
           <span>96</span>
         </div>
       </div>
@@ -82,44 +74,49 @@
         <div class="photo__picture">
           <img src="#" alt="Фотография Седоны" width="280" height="280">
         </div>
-        <h2 class="photo__heading">
+        <div class="photo__heading">
           Мост дьявола
-        </h2>
-        <p class="photo__author">
+        </div>
+        <div class="photo__author">
           Автор фото: Антон
-        </p>
-        <div class="photo__liks">
-          <a class="photo__like-btn" href="#">Like</a>
+        </div>
+        <div class="photo__likes">
+          <a class="photo__like-button" href="#">Like</a>
           <span>254</span>
         </div>
       </div>
     </section>
-    <div class="text-block">
-      <h2 class="text-block__heading">
+    <div class="photos">
+      <h2 class="photos__title">
         Все еще сомневаетесь?
       </h2>
-      <p class="text-block_description">
+      <p class="photos__description">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
     </div>
     <section class="video">
-      <div class="video__picture">
-        <img src="#" alt="видеопрезентация Седоны" width="320" height="200">
-      </div>
       <div class="video__controls">
+        <div class="video__scroll">
+          <div class="video__scale">
+            <div class="video__slider"></div>
+          </div>
+        </div>
+        <div class="video__replay"></div>
+        <div class="video__subtitles"></div>
+        <div class="video__fullscreen"></div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <p class="page-footer">
-      #visitSEDONA
-    </p>
+    <div class="page-footer__hashtag">
+      #visitsedona
+    </div>
     <ul class="socials">
       <li class="socials__item"><a href="#" class="socials__link">Twitter</a></li>
       <li class="socials__item"><a href="#" class="socials__link">Facebook</a></li>
       <li class="socials__item"><a href="#" class="socials__link">Youtube</a></li>
     </ul>
-    <p class="copyright">
+    <p class="page-footer__copyright">
       Разработано
     </p>
   </footer>
