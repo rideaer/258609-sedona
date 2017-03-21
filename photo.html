@@ -2,34 +2,38 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page">
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-navigation">
         <ul class="main-navigation__list">
-          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Главная</a></li>
+          <li class="main-navigation__item"><a href="index.html" class="main-navigation__link">Главная</a></li>
           <li class="main-navigation__item"><a class="main-navigation__link main-navigation_link--active">Фото и видое</a></li>
-          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Форма отзыва</a></li>
+          <li class="main-navigation__item"><a href="form.html" class="main-navigation__link">Форма отзыва</a></li>
           <li class="main-navigation__item"><a href="#" class="main-navigation__link">Html academy</a></li>
         </ul>
         <button class="main-navigation__toggle" type="button">Мобильное меню</button>
-        <div class="logo"><a href="#" class="logo__link"><img src="#" width="102" height="83" alt="Логотип" class="logo__picture"></a></div>
+        <div class="logo"><a href="#" class="logo__link"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип" class="logo__picture"></a></div>
       </nav>
     </header>
     <div class="intro">
-      <img class="intro__picture" src="#" alt="Cedona" width="229" height="39">
+      <img class="intro__picture" src="img/text-sedona.svg" alt="Cedona" width="229" height="39">
     </div>
     <section class="photos">
-      <h1 class="photos__title">
-        Фото и видео
-      </h1>
-      <p class="photos__description">
-        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-      </p>
+      <div class="photos__header">
+        <h1 class="photos__title">
+          Фото и видео
+        </h1>
+        <p class="photos__description">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+      </div>
       <div class="photo photo--large">
-        <a href="#" class="photo__link"><img class="photo__picture" src="#" alt="Фотография Седоны" width="280" height="280"></a>
+        <a href="#" class="photo__link"><img class="photo__picture" src="img/photo-1-mobile@1x.jpg" alt="Фотография Седоны" width="280" height="280"></a>
         <div class="photo__title">
           неродные просторы
         </div>
@@ -42,7 +46,7 @@
         </div>
       </div>
       <div class="photo">
-        <a href="#" class="photo__link"><img class="photo__picture" src="#" alt="Фотография Седоны" width="280" height="280"></a>
+        <a href="#" class="photo__link"><img class="photo__picture" src="img/photo-2-mobile@1x.jpg" alt="Фотография Седоны" width="280" height="280"></a>
         <div class="photo__title">
           Местная растительность
         </div>
@@ -55,11 +59,11 @@
         </div>
       </div>
       <div class="photo">
-        <a href="#" class="photo__link"><img class="photo__picture" src="#" alt="Фотография Седоны" width="280" height="280"></a>
+        <a href="#" class="photo__link"><img class="photo__picture" src="img/photo-3-mobile@1x.jpg" alt="Фотография Седоны" width="280" height="280"></a>
         <div class="photo__title">
           Дорога на север
         </div>
-        <div class="photo">
+        <div class="photo__author">
           Автор фото: Петр
         </div>
         <div class="photo__likes">
@@ -68,7 +72,7 @@
         </div>
       </div>
       <div class="photo">
-        <a href="#" class="photo__link"><img class="photo__picture" src="#" alt="Фотография Седоны" width="280" height="280"></a>
+        <a href="#" class="photo__link"><img class="photo__picture" src="img/photo-4-mobile@1x.jpg" alt="Фотография Седоны" width="280" height="280"></a>
         <div class="photo__title">
           Мост дьявола
         </div>
@@ -82,12 +86,14 @@
       </div>
     </section>
     <section class="video">
-      <h2 class="video__title">
-        Все еще сомневаетесь?
-      </h2>
-      <p class="video__description">
-        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-      </p>
+      <div class="video__header">
+        <h2 class="video__title">
+          Все еще сомневаетесь?
+        </h2>
+        <p class="video__description">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+      </div>
       <div class="video__video-clip">
         <div class="video__controls">
           <div class="video__scroll">
@@ -106,13 +112,13 @@
         #visitsedona
       </div>
       <ul class="socials">
-        <li class="socials__item"><a href="#" class="socials__link">Twitter</a></li>
-        <li class="socials__item"><a href="#" class="socials__link">Facebook</a></li>
-        <li class="socials__item"><a href="#" class="socials__link">Youtube</a></li>
+        <li class="socials__item"><a href="#" class="socials__link socials__link--twitter">Twitter</a></li>
+        <li class="socials__item"><a href="#" class="socials__link socials__link--facebook">Facebook</a></li>
+        <li class="socials__item"><a href="#" class="socials__link socials__link--youtube">Youtube</a></li>
       </ul>
       <p class="copyright">
         Разработано
-        <a class="copyright__link" href="#"><img class="copyright__picture" src="#" alt="html academy" width="27" height="34"></a>
+        <a class="copyright__link" href="#"><img class="copyright__picture" src="img/logo-htmlacademy.svg" alt="html academy" width="113" height="146"></a>
       </p>
     </footer>
   </div>

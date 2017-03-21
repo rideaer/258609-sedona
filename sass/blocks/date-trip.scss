@@ -1,0 +1,19 @@
+.date-trip {
+  @include alignment;
+  padding: 30px 20px 50px;
+}
+
+.date-trip__title {
+  @include text-large;
+  @include text-lh-large;
+}
+
+.date-trip__description {
+  @include text-description;
+  @include text-lh-middle;
+  @include text-uppercase;
+  margin-bottom: 38px;
+}
+
+
+

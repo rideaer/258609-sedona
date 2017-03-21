@@ -1,0 +1,12 @@
+.copyright {
+  @include text-description;
+  @include text-uppercase;
+  @include text-lh-large;
+  margin: 0;
+}
+
+.copyright__picture {
+  width: 27px;
+  height: 34px;
+  vertical-align: middle;
+}

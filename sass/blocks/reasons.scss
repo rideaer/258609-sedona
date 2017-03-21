@@ -1,0 +1,129 @@
+.reasons {
+}
+
+.reasons__header {
+  padding: 0 20px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.reasons__header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: $color-main;
+  background-image: url(../img/bg-triangle.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.reasons__title {
+  @include text-title;
+  @include text-lh-middle;
+  @include alignment;
+  margin-bottom: 36px;
+  padding: 0 10px;
+}
+
+.reasons__description {
+  @include text-description;
+  @include text-lh-middle;
+  @include alignment;
+  @include text-uppercase;
+}
+
+.reason {
+  padding: 0 20px;
+  @include alignment;
+}
+
+.reason__title {
+  @include text-title;
+  margin: 0;
+}
+
+.reason__number {
+  @include text-description;
+  @include alignment;
+  display: block;
+  margin: 14px 0 20px 0;
+}
+
+.reason__description {
+  @include text-description;
+  @include text-uppercase;
+  margin: 0;
+}
+
+.reason--background-blue {
+  padding: 42px 20px;
+  background-color: $color-main;
+  color: white;
+}
+
+.reason__picture {
+  max-width: 100%;
+  max-height: 260px;
+}
+
+.reason--icon {
+  position: relative;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 14px;
+  margin-top: 26px;
+}
+
+.reason--icon:last-child {
+  margin-bottom: 26px
+}
+
+.reason--icon-home {
+  background-image: url(../img/icon-house.svg);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size: 39px 37px;
+}
+
+.reason--icon-souvenir {
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size: 39px 37px;
+}
+
+.reason--icon-food {
+  background-image: url(../img/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size: 39px 37px;
+}
+
+.reason__description--icons {
+  margin-top: 24px
+}
+
+.reason--background-grey {
+  position: relative;
+  background: $color-lightgrey;
+  padding: 30px 35px;
+}
+
+.reason--background-grey:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  width: auto;
+  height: 1px;
+  background-color: rgba(black, 0.2);
+}
+
+
+

@@ -2,32 +2,40 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page">
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item"><a class="main-navigation__link main-navigation_link--active">Главная</a></li>
-          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Фото и видое</a></li>
-          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Форма отзыва</a></li>
+          <li class="main-navigation__item"><a href="photo.html" class="main-navigation__link">Фото и видое</a></li>
+          <li class="main-navigation__item"><a href="form.html" class="main-navigation__link">Форма отзыва</a></li>
           <li class="main-navigation__item"><a href="#" class="main-navigation__link">Html academy</a></li>
         </ul>
-        <button class="main-navigation__toggle" type="button">Мобильное меню</button>
-        <div class="logo"><a class="logo__link"><img src="#" width="102" height="83" alt="Логотип" class="logo__picture"></a></div>
+        <button class="main-navigation__toggle" type="button">
+          <span class="button-line button-line--mobile"></span>
+          <span class="button-line button-line--mobile"></span>
+          <span class="button-line button-line--mobile"></span>
+        </button>
+        <div class="logo"><a class="logo__link"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип" class="logo__picture"></a></div>
       </nav>
     </header>
     <div class="intro intro--index">
-      <img class="intro__picture" src="#" alt="welcome to cedona" width="282" height="214">
+      <img class="intro__picture" src="img/text-sedona-index.svg" alt="welcome to cedona" max-width="1917" max-height="1452">
     </div>
     <article class="reasons">
-      <h1 class="reasons__title">
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
-      </h1>
-      <p class="reasons__description">
-        Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
-      </p>
+      <div class="reasons__header">
+        <h1 class="reasons__title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="reasons__description">
+          Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
+        </p>
+      </div>
       <div class="reasons__row">
         <div class="reason reason--background-blue">
           <h2 class="reason__title">
@@ -36,12 +44,12 @@
           <span class="reason__number">
             №1
           </span>
-          <p class="reason_description">
+          <p class="reason__description">
             Седона не аттракцион для туристов, там течет своя жизнь
           </p>
         </div>
-        <div class="reason">
-          <img class="reason__picture" src="#" alt="Фотография мотеля" width="320" height="260">
+        <div class="reason__image">
+          <img class="reason__picture" src="img/photo-city@1x.jpg" alt="Фотография мотеля" width="800" height="400">
         </div>
       </div>
       <div class="reasons__row">
@@ -49,7 +57,7 @@
           <h2 class="reason__title">
             Жилье
           </h2>
-          <p class="reason__description">
+          <p class="reason__description reason__description--icons">
             Рекомендуем пожить в настоящем мотеле, все как в кино!
           </p>
         </div>
@@ -57,7 +65,7 @@
           <h2 class="reason__title">
             Сувениры
           </h2>
-          <p class="reason__description">
+          <p class="reason__description reason__description--icons">
             Не только китайского, но и местного производства!
           </p>
         </div>
@@ -65,7 +73,7 @@
           <h2 class="reason__title">
             Еда
           </h2>
-          <p class="reason__description">
+          <p class="reason__description reason__description--icons">
             Всегда заказывайте фирменный бургер, вы не разочаруетесь!
           </p>
         </div>
@@ -82,8 +90,8 @@
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
-        <div class="reason">
-          <img class="reason__picture" src="#" alt="Фотография каньена" width="320" height="260">
+        <div class="reason__image">
+          <img class="reason__picture" src="img/photo-4-mobile@1x.jpg" alt="Фотография каньена" width="800" height="400">
         </div>
       </div>
       <div class="reasons__row">
@@ -132,19 +140,20 @@
       <a href="#" class="button">Найти гостиницу</a>
     </div>
     <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4904.654012000225!2d-111.7626669506027!3d34.869698078592315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbcfabe86941e26f0!2sCity+of+Sedona!5e0!3m2!1sru!2sua!4v1489697591866" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <footer class="page-footer">
       <div class="page-footer__hashtag">
         #visitsedona
       </div>
       <ul class="socials">
-        <li class="socials__item"><a href="#" class="socials__link">Twitter</a></li>
-        <li class="socials__item"><a href="#" class="socials__link">Facebook</a></li>
-        <li class="socials__item"><a href="#" class="socials__link">Youtube</a></li>
+        <li class="socials__item"><a href="#" class="socials__link socials__link--twitter">Twitter</a></li>
+        <li class="socials__item"><a href="#" class="socials__link socials__link--facebook">Facebook</a></li>
+        <li class="socials__item"><a href="#" class="socials__link socials__link--youtube">Youtube</a></li>
       </ul>
       <p class="copyright">
         Разработано
-        <a class="copyright__link" href="#"><img class="copyright__picture" src="#" alt="html academy" width="27" height="34"></a>
+        <a class="copyright__link" href="#"><img class="copyright__picture" src="img/logo-htmlacademy.svg" alt="html academy" width="113" height="146"></a>
       </p>
     </footer>
   </div>

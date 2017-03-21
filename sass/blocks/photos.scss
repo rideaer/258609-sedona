@@ -1,0 +1,21 @@
+.photos {
+  margin-bottom: 36px;
+}
+
+.photos__header {
+  @include alignment;
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+
+.photos__title {
+  @include text-title;
+  @include text-lh-large;
+  margin: 0 0 26px 0;
+}
+
+.photos__description {
+  @include text-description;
+  @include text-uppercase;
+  @include text-lh-middle;
+}

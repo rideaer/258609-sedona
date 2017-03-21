@@ -1,0 +1,42 @@
+@mixin text-large() {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@mixin text-title() {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@mixin text-description() {
+  font-size: 14px;
+}
+
+@mixin text-bold() {
+  font-weight: bold;
+}
+
+@mixin text-uppercase() {
+  text-transform: uppercase;
+}
+
+@mixin text-lh-small() {
+  line-height: 21px;
+}
+
+@mixin text-lh-middle () {
+  line-height: 24px;
+}
+
+@mixin text-lh-large() {
+  line-height: 26px;
+}
+
+@mixin alignment() {
+  text-align: center;
+  margin: 0 auto;
+}
+
+

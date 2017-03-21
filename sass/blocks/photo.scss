@@ -1,0 +1,48 @@
+.photo {
+  padding: 22px 20px;
+  border-top: 1px solid rgba(black, 0.1);
+}
+
+.photo:last-child {
+  border-bottom: 1px solid rgba(black, 0.1);
+}
+
+.photo__title {
+  @include text-description;
+  @include text-lh-middle;
+  @include text-uppercase;
+  @include text-bold;
+  margin-top: 16px;
+}
+
+.photo__author {
+  @include text-description;
+  @include text-lh-middle;
+  margin-bottom: 12px;
+}
+
+.photo__likes {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.photo__like-button {
+  border: none;
+  background: none;
+  background-image: url(../img/icon-like.svg);
+  width: 22px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.photo__like-amount {
+  @include text-description;
+  @include text-lh-middle;
+  @include text-bold;
+  display: inline-block;
+  vertical-align: bottom;
+}
