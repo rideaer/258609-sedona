@@ -1,10 +1,7 @@
-.reasons {
-}
-
 .reasons__header {
   padding: 0 20px;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 
 .reasons__header::after {
@@ -23,17 +20,21 @@
 
 .reasons__title {
   @include text-title;
-  @include text-lh-middle;
+  @include text-lh-large;
   @include alignment;
-  margin-bottom: 36px;
+  margin-bottom: 26px;
   padding: 0 10px;
 }
 
 .reasons__description {
   @include text-description;
-  @include text-lh-middle;
+  @include text-lh-large;
   @include alignment;
   @include text-uppercase;
+}
+
+.reasons__row:last-of-type {
+  margin-top: -3px;
 }
 
 .reason {
@@ -43,24 +44,27 @@
 
 .reason__title {
   @include text-title;
+  @include text-lh-large;
   margin: 0;
 }
 
 .reason__number {
   @include text-description;
+  @include text-lh-small;
   @include alignment;
   display: block;
-  margin: 14px 0 20px 0;
+  margin: 9px 0 15px 0;
 }
 
 .reason__description {
   @include text-description;
+  @include text-lh-small;
   @include text-uppercase;
   margin: 0;
 }
 
 .reason--background-blue {
-  padding: 42px 20px;
+  padding: 40px 20px;
   background-color: $color-main;
   color: white;
 }
@@ -75,43 +79,44 @@
   text-align: left;
   padding-left: 70px;
   padding-top: 14px;
-  margin-top: 26px;
+  margin-top: 19px;
+  margin-bottom: -4px;
 }
 
 .reason--icon:last-child {
-  margin-bottom: 26px
+  margin-bottom: 37px;
 }
 
 .reason--icon-home {
   background-image: url(../img/icon-house.svg);
   background-blend-mode: lighten;
   background-repeat: no-repeat;
-  background-position: 20px 0;
+  background-position: 20px 4px;
   background-size: 39px 37px;
 }
 
 .reason--icon-souvenir {
   background-image: url(../img/icon-gift.svg);
   background-repeat: no-repeat;
-  background-position: 20px 0;
+  background-position: 21px 2px;
   background-size: 39px 37px;
 }
 
 .reason--icon-food {
   background-image: url(../img/icon-burger.svg);
   background-repeat: no-repeat;
-  background-position: 20px 0;
+  background-position: 18px 7px;
   background-size: 39px 37px;
 }
 
 .reason__description--icons {
-  margin-top: 24px
+  margin-top: 13px
 }
 
 .reason--background-grey {
   position: relative;
   background: $color-lightgrey;
-  padding: 30px 35px;
+  padding: 26px 35px 28px 35px;
 }
 
 .reason--background-grey:not(:last-child)::after {

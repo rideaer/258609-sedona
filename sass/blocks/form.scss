@@ -1,14 +1,27 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .form__block {
   display: flex;
-  padding: 0 20px 22px 20px;
-  margin: 22px 0 0 0;
+  padding: 0 20px 24px 20px;
+  margin: 19px 0 0 0;
   border: none;
   border-bottom: 1px solid $color-form-main-hover;
+}
+
+.form__block--contacts {
+  padding: 0 20px 28px 20px;
+}
+
+.form__block--radio {
+  padding: 0 20px 28px 20px;
+}
+
+.form__block--checkbox {
+  padding: 0 20px 26px 20px;
 }
 
 .form__block:last-of-type {
@@ -19,12 +32,17 @@
   @include text-title;
   @include text-lh-large;
   @include alignment;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 
 .form__heading--left-align {
   text-align: left;
-  margin: 0 0 28px 0;
+  padding-left: 19px;
+  margin: 0 0 19px 0;
+}
+
+.form__heading--checkbox {
+  margin-bottom: 15px;
 }
 
 .form__field {
@@ -44,7 +62,7 @@
 }
 
 .form__field--radio:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .form__field--checkbox:not(:last-child) {
@@ -177,7 +195,7 @@
 
 .form__label--contacts {
   padding-left: 22px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .form__input-text {
@@ -219,16 +237,19 @@
   @include text-lh-large;
   color: $color-warning;
   padding-left: 22px;
-  margin-top: 6px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 11px;
 }
 
 .form__text-area {
   background-color: $color-form-main;
   border: 4px solid  $color-form-main;
+  width: 232px;
+  height: 116px;
   outline: none;
   padding: 18px 20px;
   margin: 0;
+  margin-top: -5px;
 
   &:hover {
     background-color: $color-form-main-hover;
@@ -250,7 +271,7 @@
 .form__button {
   margin: 0 20px;
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .form__excerpt {
