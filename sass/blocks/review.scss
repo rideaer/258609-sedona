@@ -1,0 +1,18 @@
+.review {
+  @include alignment;
+  padding: 0 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.review__title {
+  @include text-title;
+  @include text-lh-large;
+  margin: 0;
+}
+
+.review__description {
+  @include text-description;
+  @include text-uppercase;
+  @include text-lh-middle;
+  margin: 25px 0 17px;
+}

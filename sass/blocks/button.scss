@@ -1,0 +1,19 @@
+.button {
+  @include text-large;
+  @include text-lh-large;
+  text-decoration: none;
+  color: white;
+  background: $color-main;
+  padding: 16px 46px;
+  outline: none;
+  border: none;
+}
+
+.button:hover {
+  background: $color-main-hover;
+}
+
+.button:active {
+  background: $color-main-active;
+  color: rgba(white, 0.3);
+}
