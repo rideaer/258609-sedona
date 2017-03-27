@@ -16,3 +16,23 @@
   @include text-lh-middle;
   margin: 25px 0 17px;
 }
+
+@media #{$tablet-widths} {
+
+  .review {
+    width: 445px;
+    border: none;
+    margin-bottom: 55px;
+  }
+
+  .review__title {
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .review {
+    margin-bottom: 40px;
+  }
+}
