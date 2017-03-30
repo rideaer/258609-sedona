@@ -43,3 +43,18 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media #{$tablet-widths} {
+  .socials {
+    margin: 0;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .socials {
+    margin-right: 95px;
+  }
+
+}

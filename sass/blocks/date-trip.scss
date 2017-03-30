@@ -1,7 +1,7 @@
 .date-trip {
   @include alignment;
-  margin-top: 28px;
-  margin-bottom: 65px;
+  margin-top: 26px;
+  margin-bottom: 49px;
   padding: 0 20px;
 }
 
@@ -9,7 +9,7 @@
   @include text-large;
   @include text-lh-large;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .date-trip__description {
@@ -17,8 +17,47 @@
   @include text-lh-middle;
   @include text-uppercase;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
+.date-trip__link {
+  display: inline-block;
+}
+
+@media #{$tablet-widths} {
+  .date-trip {
+    @include alignment;
+    width: 458px;
+    margin-top: 55px;
+    margin-bottom: 58px;
+    padding: 0;
+  }
+
+  .date-trip__title {
+    @include text-large;
+    @include text-lh-large;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .date-trip__description {
+    margin-bottom: 43px;
+  }
+
+  .date-trip__link {
+    width: 458px - 46px * 2;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .date-trip {
+    margin-bottom: 66px;
+  }
+
+  .date-trip__description {
+    margin-bottom: 48px;
+  }
+}
 
 

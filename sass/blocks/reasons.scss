@@ -15,14 +15,14 @@
   background-image: url(../img/bg-triangle.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50%;
 }
 
 .reasons__title {
   @include text-title;
   @include text-lh-large;
   @include alignment;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   padding: 0 10px;
 }
 
@@ -33,102 +33,30 @@
   @include text-uppercase;
 }
 
-.reasons__row:last-of-type {
-  margin-top: -3px;
+@media #{$tablet-widths} {
+
+  .reasons__header {
+    padding-bottom: 50px;
+    width: 520px;
+    margin: 0 auto;
+  }
+
+  .reasons__header::after {
+    background: none;
+  }
+
+  .reasons__title {
+    @include text-large;
+    @include text-lh-large;
+    @include alignment;
+    margin-bottom: 27px;
+  }
+
+  .reasons__row {
+    display: flex;
+  }
+
+  .reasons__row--background-grey {
+    background-color: $color-lightgrey;;
+  }
 }
-
-.reason {
-  padding: 0 20px;
-  @include alignment;
-}
-
-.reason__title {
-  @include text-title;
-  @include text-lh-large;
-  margin: 0;
-}
-
-.reason__number {
-  @include text-description;
-  @include text-lh-small;
-  @include alignment;
-  display: block;
-  margin: 9px 0 15px 0;
-}
-
-.reason__description {
-  @include text-description;
-  @include text-lh-small;
-  @include text-uppercase;
-  margin: 0;
-}
-
-.reason--background-blue {
-  padding: 40px 20px;
-  background-color: $color-main;
-  color: white;
-}
-
-.reason__picture {
-  max-width: 100%;
-  max-height: 260px;
-}
-
-.reason--icon {
-  position: relative;
-  text-align: left;
-  padding-left: 70px;
-  padding-top: 14px;
-  margin-top: 19px;
-  margin-bottom: -4px;
-}
-
-.reason--icon:last-child {
-  margin-bottom: 37px;
-}
-
-.reason--icon-home {
-  background-image: url(../img/icon-house.svg);
-  background-blend-mode: lighten;
-  background-repeat: no-repeat;
-  background-position: 20px 4px;
-  background-size: 39px 37px;
-}
-
-.reason--icon-souvenir {
-  background-image: url(../img/icon-gift.svg);
-  background-repeat: no-repeat;
-  background-position: 21px 2px;
-  background-size: 39px 37px;
-}
-
-.reason--icon-food {
-  background-image: url(../img/icon-burger.svg);
-  background-repeat: no-repeat;
-  background-position: 18px 7px;
-  background-size: 39px 37px;
-}
-
-.reason__description--icons {
-  margin-top: 13px
-}
-
-.reason--background-grey {
-  position: relative;
-  background: $color-lightgrey;
-  padding: 26px 35px 28px 35px;
-}
-
-.reason--background-grey:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  width: auto;
-  height: 1px;
-  background-color: rgba(black, 0.2);
-}
-
-
-

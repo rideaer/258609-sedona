@@ -12,9 +12,13 @@
 
 @import "blocks/main-navigation.scss";
 
+@import "blocks/logo.scss";
+
 @import "blocks/intro.scss";
 
 @import "blocks/reasons.scss";
+
+@import "blocks/reason.scss";
 
 @import "blocks/date-trip.scss";
 
@@ -35,3 +39,5 @@
 @import "blocks/review.scss";
 
 @import "blocks/form.scss";
+
+@import "blocks/map.scss";

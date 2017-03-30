@@ -1,11 +1,13 @@
 .photos {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 33px;
 }
 
 .photos__header {
   @include alignment;
   padding: 0 20px;
-  margin-bottom: 26px;
+  margin-bottom: 13px;
 }
 
 .photos__title {
@@ -18,4 +20,40 @@
   @include text-description;
   @include text-uppercase;
   @include text-lh-middle;
+  padding: 0 5px;
+}
+
+@media #{$tablet-widths} {
+
+  .photos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    margin-bottom: 67px;
+  }
+
+  .photos__header {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+  }
+
+  .photos__title {
+    font-size: 30px;
+    margin: 0 0 31px 0;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .photos {
+    padding: 0;
+    margin-bottom: 70px;
+  }
+
+  .photos__header {
+    margin-bottom: 57px;
+    padding: 0 60px;
+  }
+
 }

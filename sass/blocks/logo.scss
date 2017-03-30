@@ -1,0 +1,22 @@
+.logo__link {
+  display: inline-block;
+  height: 52px;
+}
+
+.logo__picture {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@media #{$tablet-widths} {
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+}

@@ -7,3 +7,22 @@
   @include text-large;
   @include text-lh-large;
 }
+
+@media #{$tablet-widths} {
+
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 60px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .page-footer {
+    padding: 33px 44px 33px 132px;
+  }
+
+}
