@@ -544,7 +544,7 @@
     text-align: center;
     padding: 0;
     margin-left: 0;
-    margin-bottom: 19px;
+    margin-bottom: 74px;
 
     &::before {
       content: "";
@@ -570,15 +570,42 @@
   .form__block--contacts {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__field--contacts {
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  .form__text-hidden {
+    display: none;
   }
 
   .form__field--contacts:first-of-type {
     margin-bottom: 0;
   }
 
-  .form__field--contacts {
-    box-sizing: border-box;
-    width: 50%;
+  .form__label--contacts {
+    padding: 0;
+    margin: 0;
+    margin-right: 18px;
+    width: auto;
+  }
+
+  .form__input-text--contacts {
+    width: 230px;
+  }
+
+  .form__warning {
+    position: absolute;
+    top: -38px;
+    left: 82px;
   }
 
   .form__heading--checkbox {

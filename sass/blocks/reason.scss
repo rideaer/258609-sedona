@@ -97,15 +97,29 @@
   margin-top: 14px
 }
 
-.reason__picture {
+.reason--image {
   width: 320px;
   height: 260px;
+  padding: 0;
+  margin: 0;
+}
+
+.reason__picture {
   display: block;
+  width: 100%;
+  height: 256px;
 }
 
 @media #{$tablet-widths} {
   .reason {
     margin: 0;
+    width: 33.333333%;
+    box-sizing: border-box;
+  }
+
+  .reason--image {
+    height: 256px;
+    width: 66.666666%;
   }
 
   .reason--background-blue {
@@ -124,11 +138,6 @@
 
   .reason__number {
     margin: 9px 0 21px 0;
-  }
-
-  .reason__picture {
-    width: 512px;
-    height: 256px;
   }
 
   .reason--icon {
@@ -154,7 +163,6 @@
   }
 
   .reason--background-grey {
-    flex-basis: 160px;
     margin: 0 auto;
   }
 
@@ -172,10 +180,6 @@
 
   .reason--background-blue {
     padding: 46px 60px 44px 60px;
-  }
-
-  .reason__picture {
-    width: 800px;
   }
 
 }

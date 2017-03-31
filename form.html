@@ -33,7 +33,7 @@
     </div>
     <section class="form">
       <form action="https://echo.htmlacademy.ru" class="form__feedback" method="post">
-        <fieldset class="form__block">
+        <div class="form__block">
           <legend class="form__heading form__heading--names">Представьтесь:</legend>
           <div class="form__field form__field--names">
             <label class="form__label form__label--names " for="first-name">Имя*:</label>
@@ -47,11 +47,11 @@
             <label class="form__label form__label--names " for="third-name">Отчество:</label>
             <input class="form__input-text form__input-text--names" type="text" name="third-name" id="third-name" placeholder="Александрович">
           </div>
-        </fieldset>
-        <fieldset class="form__block form__block--contacts">
+        </div>
+        <div class="form__block form__block--contacts">
           <legend class="form__heading form__heading--contacts">Контактная информация:</legend>
           <div class="form__field form__field--contacts">
-            <label class="form__label form__label--contacts" for="phone">Контактный телефон*:</label>
+            <label class="form__label form__label--contacts" for="phone"><span class="form__text-hidden">Контактный</span> телефон*:</label>
             <input class="form__input-text form__input-text--contacts" type="tel" name="phone" id="phone" placeholder="Введите телефон">
             <div class="form__warning">Ошибка, перепроверьте номер</div>
           </div>
@@ -59,8 +59,8 @@
             <label class="form__label form__label--contacts" for="email">Электронная почта*:</label>
             <input class="form__input-text form__input-text--contacts" type="email" name="email" id="email" placeholder="Введите e-mail">
           </div>
-        </fieldset>
-        <fieldset class="form__block form__block--radio">
+        </div>
+        <div class="form__block form__block--radio">
           <legend class="form__heading form__heading--radio">Ваше общее впечатление:</legend>
           <div class="form__field form__field--radio">
             <input class="form__input-radio" type="radio" name="radio" value="good" id="radio-good" checked>
@@ -74,8 +74,8 @@
             <input class="form__input-radio" type="radio" name="radio" value="neutral" id="radio-neutral">
             <label class="form__label-select form__label-select--radio" for="radio-neutral">Затрудняюсь ответить</label>
           </div>
-        </fieldset>
-        <fieldset class="form__block form__block--checkbox">
+        </div>
+        <div class="form__block form__block--checkbox">
           <legend class="form__heading form__heading--checkbox">Посещенные достопримечательности:</legend>
           <div class="form__attraction">
             <div class="form__field form__field--checkbox">
@@ -95,11 +95,11 @@
               <label class="form__label-select form__label-select--ckeckbox" for="red-rocks">Красные скалы</label>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="form__block">
+        </div>
+        <div class="form__block">
           <legend class="form__heading form__heading--textarea" for="form-textarea">Опишите свои эмоции:</legend>
           <textarea class="form__text-area" name="" id=""  id="form-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
+        </div>
         <button class="button form__button" type="submit">Отправить отзыв</button>
         <div class="form__excerpt">* - Обязательные поля</div>
       </form>
@@ -118,6 +118,28 @@
         <a class="copyright__link" href="#"><img class="copyright__picture" src="img/logo-htmlacademy.svg" alt="html academy" width="113" height="146"></a>
       </p>
     </footer>
+  </div>
+  <div class="popup-failure">
+    <h2 class="popup-failure__title">
+      ЧТО-ТО ПОШЛО НЕ ТАК!
+    </h2>
+    <p class="popup-failure__description">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <button class="button popup-failure__button">
+      ок
+    </button>
+  </div>
+  <div class="popup-success">
+  <h2 class="popup-success__title">
+      Ваш отзыв отправлен!
+    </h2>
+    <p class="popup-success__description">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <button class="button popup-success__button">
+      ЗАкРЫТЬ ОКНО
+    </button>
   </div>
 </body>
 </html>
