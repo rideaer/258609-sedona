@@ -1,5 +1,6 @@
 .logo__link {
   display: inline-block;
+  vertical-align: top;
   height: 52px;
 }
 
@@ -17,6 +18,15 @@
     position: absolute;
     top: 0;
     left: 50%;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .logo__picture {
+    width: 188px;
+    height: 96px;
   }
 
 }

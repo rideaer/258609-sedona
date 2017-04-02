@@ -94,16 +94,23 @@
 
 @media #{$tablet-widths} {
 
+  .main-navigation__list--closed {
+    display: block;
+  }
+
+
   .main-navigation__list {
-    padding: 0 26px 0 49px;
+    padding: 0 26px 0 26px;
+    text-align: right;
   }
 
   .main-navigation__item {
     display: inline-block;
+    vertical-align: top;
   }
 
   .main-navigation__item:nth-child(1) {
-    margin-right: 72px;
+    margin-right: 73px;
   }
 
   .main-navigation__item:nth-child(2) {
@@ -118,6 +125,7 @@
     @include text-description;
     @include text-lh-large;
     display: inline-block;
+    vertical-align: top;
     padding: 14px 0;
     color: black;
     background: none;
@@ -168,7 +176,7 @@
 
 @media #{$desktop-widths} {
   .main-navigation__list {
-    padding: 0 26px 0 91px;
+    padding: 0 70px 0;
   }
 
   .main-navigation__item:nth-child(1) {

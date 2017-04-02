@@ -80,6 +80,7 @@
   @include text-lh-small;
   position: relative;
   display: inline-block;
+  vertical-align: top;
   margin: 9px 0 15px 0;
   padding: 0 15px;
 
@@ -132,6 +133,7 @@
 .reason--image {
   width: 320px;
   height: 260px;
+  overflow: hidden;
   padding: 0;
   margin: 0;
 }
@@ -139,7 +141,6 @@
 .reason__picture {
   display: block;
   width: 100%;
-  height: 260px;
 }
 
 .reason__transfer {
@@ -159,11 +160,8 @@
 
   .reason--image {
     height: 256px;
+    overflow: hidden;
     width: 66.666666%;
-  }
-
-  .reason__picture {
-    height: 256px;
   }
 
   .reason--background-blue {
@@ -229,7 +227,6 @@
   }
 
   .reason--background-grey {
-    margin: 0 auto;
     padding: 46px 50px 44px;
 
     &:nth-child(2) {

@@ -2,6 +2,7 @@ var navMain = document.querySelector(".main-navigation__list");
 var navToggle = document.querySelector(".main-navigation__toggle");
 
 navMain.classList.remove("main-navigation__list--nojs");
+navMain.classList.add("main-navigation__list--closed");
 navToggle.classList.add("main-navigation__toggle--closed");
 
 navToggle.addEventListener("click", function() {
