@@ -17,6 +17,7 @@
   @include text-title;
   @include text-lh-large;
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   margin-top: 43px;
   margin-bottom: 32px;
@@ -27,24 +28,23 @@
   @include text-uppercase;
   @include text-lh-middle;
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   margin-bottom: 43px;
 }
 
 .popup-success__button {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 22px;
   display: block;
-  padding: 18px 54px;
+  padding: 16px 35px;
 }
 
 @media #{$tablet-widths} {
   .popup-success {
     width: 640px;
     height: 347px;
-    background: linear-gradient(to bottom, white 190px, $color-background-page 190px);
+    background: linear-gradient(to bottom, white 200px, $color-background-page 200px);
   }
 
   .popup-success__title {
@@ -59,7 +59,8 @@
   }
 
   .popup-success__button {
-    bottom: 55px;
+    left: 90px;
+    bottom: 45px;
     padding: 16px 0;
     width: 460px;
   }

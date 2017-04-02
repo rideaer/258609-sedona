@@ -247,7 +247,7 @@
 .form__input-text {
   border: 4px solid $color-form-main;
   background-color: $color-form-main;
-  padding: 16px 18px;
+  padding: 15px 18px;
   outline: none;
 
   &::placeholder {
@@ -269,12 +269,17 @@
 }
 
 .form__input-text--names {
+  @include text-title;
+  text-transform: none;
+  color: black;
   width: 100%;
 }
 
 .form__input-text--contacts {
+  @include text-title;
+  text-transform: none;
+  color: black;
   padding-right: 58px;
-
 }
 
 .form__warning {
@@ -318,6 +323,7 @@
   margin: 0 20px;
   font-size: 18px;
   margin-top: 23px;
+  width: 87%;
 }
 
 .form__excerpt {
@@ -395,7 +401,8 @@
 
   .form__heading--contacts {
     position: relative;
-    margin-left: 165px;
+    text-align: center;
+    margin: 0;
     margin-bottom: 19px;
 
     &::before {
@@ -404,7 +411,7 @@
       width: 125px;
       height: 1px;
       top: 50%;
-      left: -55%;
+      left: 0;
       background-color: $color-form-main-hover;
     }
 
@@ -414,7 +421,7 @@
       width: 125px;
       height: 1px;
       top: 50%;
-      right: -63%;
+      right: 0;
       background-color: $color-form-main-hover;
     }
   }
@@ -515,8 +522,8 @@
   }
 
   .form__heading--textarea {
-
     position: relative;
+    margin-bottom: 62px;
 
     &::before {
       content: "";
@@ -524,7 +531,7 @@
       width: 125px;
       height: 1px;
       top: 50%;
-      left: -79%;
+      left: 0;
       background-color: $color-form-main-hover;
     }
 
@@ -534,13 +541,9 @@
       width: 125px;
       height: 1px;
       top: 50%;
-      right: -79%;
+      right: 0;
       background-color: $color-form-main-hover;
     }
-  }
-
-  .form__heading--textarea {
-    margin-bottom: 62px;
   }
 
   .form__text-area {
@@ -682,7 +685,7 @@
     width: 100%;
     text-align: center;
     padding: 0 300px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 
     &::before {
       content: "";
@@ -745,7 +748,7 @@
       width: 280px;
       height: 1px;
       top: 50%;
-      left: -142%;
+      left: 0;
       background-color: $color-form-main-hover;
     }
 
@@ -755,7 +758,7 @@
       width: 280px;
       height: 1px;
       top: 50%;
-      right: -142%;
+      right: 0;
       background-color: $color-form-main-hover;
     }
 
