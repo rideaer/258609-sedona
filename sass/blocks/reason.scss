@@ -12,10 +12,12 @@
 .reason--icon {
   text-align: left;
   padding-left: 70px;
-  margin-top: 28px;
+  padding-top: 12px;
+  margin-top: 16px;
+  position: relative;
 
   &:first-child {
-    margin-top: 35px;
+    margin-top: 24px;
   }
 
   &:last-child {
@@ -23,9 +25,37 @@
   }
 }
 
+.reason__icon-home {
+  fill: $color-main;
+  position: absolute;
+  width: 39px;
+  height: 43px;
+  top: 0;
+  left: 20px;
+}
+
+.reason__icon-souvenir {
+  fill: $color-main;
+  position: absolute;
+  width: 41px;
+  height: 38px;
+  top: 0;
+  left: 20px;
+}
+
+.reason__icon-food {
+  fill: $color-main;
+  position: absolute;
+  width: 37px;
+  height: 48px;
+  top: 0;
+  left: 20px;
+}
+
 .reason--background-grey {
+  background-color: $color-lightgrey;
   position: relative;
-  padding: 26px 35px 29px 35px;
+  padding: 26px 35px 29px;
 }
 
 .reason--background-grey:not(:last-child)::after {
@@ -77,6 +107,7 @@
 }
 
 .reason__number--background-blue {
+
   &::before {
     background-color: rgba(#ffffff, 0.6);
   }
@@ -84,6 +115,7 @@
   &::after {
     background-color: rgba(#ffffff, 0.6);
   }
+
 }
 
 .reason__description {
@@ -107,7 +139,15 @@
 .reason__picture {
   display: block;
   width: 100%;
-  height: 256px;
+  height: 260px;
+}
+
+.reason__transfer {
+  display: none;
+}
+
+.reason__hyphen {
+  display: none;
 }
 
 @media #{$tablet-widths} {
@@ -120,6 +160,10 @@
   .reason--image {
     height: 256px;
     width: 66.666666%;
+  }
+
+  .reason__picture {
+    height: 256px;
   }
 
   .reason--background-blue {
@@ -142,8 +186,7 @@
 
   .reason--icon {
     @include alignment;
-    padding: 159px 0 61px;
-    width: 165px;
+    padding: 58px 45px 61px;
 
     &:first-child {
       margin-top: 0;
@@ -151,7 +194,30 @@
 
     &:last-child {
       margin-bottom: 0;
+      padding: 58px 50px 61px;
     }
+
+  }
+
+  .reason__icon-home {
+    position: static;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 23px;
+  }
+
+  .reason__icon-souvenir {
+    position: static;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 23px;
+  }
+
+  .reason__icon-food {
+    position: static;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 23px;
   }
 
   .reason--icon-souvenir {
@@ -164,14 +230,25 @@
 
   .reason--background-grey {
     margin: 0 auto;
+    padding: 46px 50px 44px;
+
+    &:nth-child(2) {
+      padding: 46px 55px 44px;
+    }
+
+    &:not(:last-child)::after {
+      background: none;
+    }
+
   }
 
-  .reason--background-grey:not(:last-child)::after {
-    background: none;
+  .reason__transfer {
+    display: block;
   }
 
-  .reason--background-grey {
-    padding: 46px 35px 44px 35px;
+  .reason__hyphen {
+    display: inline-block;
+    vertical-align: middle;
   }
 
 }
@@ -179,7 +256,28 @@
 @media #{$desktop-widths} {
 
   .reason--background-blue {
-    padding: 46px 60px 44px 60px;
+    padding: 53px 60px 44px;
+  }
+
+  .reason--align-right {
+    padding: 53px 85px 44px;
+  }
+
+  .reason--icon {
+    padding: 58px 45px 82px;
+  }
+
+  .reason--background-grey {
+    padding: 46px 50px 64px;
+
+    &:nth-child(1) {
+      padding: 46px 65px 64px;
+    }
+
+    &:nth-child(2) {
+      padding: 46px 65px 64px;
+    }
+
   }
 
 }
