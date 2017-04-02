@@ -52,6 +52,60 @@
 .form__field--contacts {
   flex-direction: column;
   align-items: stretch;
+  position: relative;
+
+  &:first-of-type {
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-color: $color-form-main-active;
+      right: 0;
+      bottom: 42px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 42px;
+      width: 58px;
+      height: 58px;
+      background-image: url(../img/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+
+  }
+
+  &:last-of-type {
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-color: $color-form-main-active;
+      right: 0;
+      bottom: 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 58px;
+      height: 58px;
+      background-image: url(../img/icon-mail.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+
+  }
+
 }
 
 .form__field--names:not(:last-child) {
@@ -179,11 +233,6 @@
     background-image: url(../img/icon-tick.svg);
   }
 
-  &:active {
-    &::before {
-      background-image: url(../img/icon-tick.svg);
-    }
-  }
 }
 
 .form__label--names {
@@ -268,7 +317,7 @@
 .form__button {
   margin: 0 20px;
   font-size: 18px;
-  margin-top: 27px;
+  margin-top: 23px;
 }
 
 .form__excerpt {
@@ -378,7 +427,19 @@
 
     &:first-of-type {
       margin-bottom: 22px;
+
+      &:before {
+        right: 0;
+        bottom: 0;
+      }
+
+      &:after {
+        right: 0;
+        bottom: 0;
+      }
+
     }
+
   }
 
   .form__input-text--contacts {
@@ -527,8 +588,7 @@
   }
 
   .form__field--names {
-    width: 82%;
-    margin-left: 80px;
+    width: 83%;
   }
 
   .form__heading--radio {
@@ -581,14 +641,23 @@
     box-sizing: border-box;
     width: 50%;
     justify-content: flex-start;
+
+    &:first-of-type {
+      margin-bottom: 0;
+
+      &:before {
+        right: 80px;
+      }
+
+      &:after {
+        right: 80px;
+      }
+    }
+
   }
 
   .form__text-hidden {
     display: none;
-  }
-
-  .form__field--contacts:first-of-type {
-    margin-bottom: 0;
   }
 
   .form__label--contacts {
@@ -666,6 +735,30 @@
       width: 200px;
       margin-left: auto;
     }
+  }
+
+  .form__heading--textarea {
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 1px;
+      top: 50%;
+      left: -142%;
+      background-color: $color-form-main-hover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 1px;
+      top: 50%;
+      right: -142%;
+      background-color: $color-form-main-hover;
+    }
+
   }
 
 }

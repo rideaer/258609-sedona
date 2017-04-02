@@ -18,7 +18,8 @@ $color-form-main-hover: #e5e5e5;
 
 $color-form-main-active: #d5d5d5;
 
-$tablet-widths: (min-width: 768px);
+$tablet-widths: "(min-width: 768px)";
 
-$desktop-widths: (min-width: 1200px);
+$desktop-widths: "(min-width: 1200px)";
 
+$retina-images: "(min-resolution: 144dpi), min-resolution: 1.5dppx)";

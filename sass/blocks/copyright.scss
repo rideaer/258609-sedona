@@ -6,8 +6,15 @@
 }
 
 .copyright__picture {
-  width: 27px;
-  height: 34px;
   vertical-align: middle;
   margin-left: 10px;
+
+  &:hover {
+    fill: $color-main;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+
 }

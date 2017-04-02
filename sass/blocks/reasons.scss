@@ -49,14 +49,11 @@
     @include text-large;
     @include text-lh-large;
     @include alignment;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 
   .reasons__row {
     display: flex;
   }
 
-  .reasons__row--background-grey {
-    background-color: $color-lightgrey;;
-  }
 }

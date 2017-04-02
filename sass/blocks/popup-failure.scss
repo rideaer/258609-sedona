@@ -32,16 +32,31 @@
 }
 
 .popup-failure__button {
-  padding: 20px 76px;
+  padding: 16px 76px;
 }
 
 @media #{$tablet-widths} {
+
   .popup-failure {
     width: 400px;
-    height: 350px;
+    height: 347px;
+    padding: 60px 60px 50px;
   }
-}
 
-@media #{$desktop-widths} {
+  .popup-failure__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .popup-failure__description {
+    margin-bottom: 33px;
+  }
+
+  .popup-failure__button {
+    padding: 16px 121px;
+  }
 
 }
