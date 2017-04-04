@@ -98,7 +98,6 @@
     display: block;
   }
 
-
   .main-navigation__list {
     padding: 0 26px 0 26px;
     text-align: right;
@@ -138,6 +137,7 @@
     &:active:not(.main-navigation_link--active) {
       color: #c7c7c7;
     }
+
   }
 
   .main-navigation_link--active {
@@ -151,6 +151,7 @@
     &:active {
       color: #d6d0cc;
     }
+
   }
 
   .main-navigation__link:hover:not(.main-navigation_link--active) {
@@ -172,9 +173,11 @@
   .main-navigation__toggle {
     display: none;
   }
+
 }
 
 @media #{$desktop-widths} {
+
   .main-navigation__list {
     padding: 0 70px 0;
   }

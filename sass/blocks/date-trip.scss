@@ -30,6 +30,7 @@
 }
 
 @media #{$tablet-widths} {
+
   .date-trip {
     @include alignment;
     width: 458px;
@@ -73,6 +74,7 @@
   .date-trip__description {
     margin-bottom: 47px;
   }
+
 }
 
 

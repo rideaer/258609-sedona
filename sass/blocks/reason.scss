@@ -23,6 +23,7 @@
   &:last-child {
     margin-bottom: 36px;
   }
+
 }
 
 .reason__icon-home {
@@ -105,6 +106,7 @@
     right: 0;
     transform: translateY(-50%);
   }
+
 }
 
 .reason__number--background-blue {
@@ -144,7 +146,7 @@
 }
 
 .reason__transfer {
-  display: none;
+  display: inline;
 }
 
 .reason__hyphen {
@@ -152,6 +154,7 @@
 }
 
 @media #{$tablet-widths} {
+
   .reason {
     margin: 0;
     width: 33.333333%;

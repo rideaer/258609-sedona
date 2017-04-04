@@ -3,3 +3,33 @@
   height: 350px;
   border: 0;
 }
+
+.map__sedona--nojs {
+  background-color: #cbdfaa;
+  background-image: url(../img/bg-map-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @media #{$retina-images} {
+    background-image: url(../img/bg-map-mobile@2x.jpg);
+  }
+
+  @media #{$tablet-widths} {
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+
+    @media #{$retina-images} {
+      background-image: url(../img/bg-map-tablet@2x.jpg);
+    }
+
+  }
+
+  @media #{$desktop-widths} {
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+
+    @media #{$retina-images} {
+      background-image: url(../img/bg-map-desktop@2x.jpg);
+    }
+
+  }
+
+}

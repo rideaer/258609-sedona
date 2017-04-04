@@ -69,6 +69,7 @@
   &:hover {
     box-shadow: 0 0 3px 0 white;
   }
+
 }
 
 .video__buttons {
@@ -114,6 +115,7 @@
 }
 
 @media #{$tablet-widths} {
+
   .video__header {
     width: 440px;
     margin: 0 auto;

@@ -150,18 +150,23 @@
   }
 
   &:hover {
+
     &::before {
       background-color: $color-form-main-hover;
       border-color: $color-form-main-hover;
     }
+
   }
 
   &:active {
+
     &::before {
       background-color: $color-form-main-active;
       border-color: $color-form-main-active;
     }
+
   }
+
 }
 
 .form__input-radio {
@@ -171,24 +176,30 @@
 .form__input-radio[id="radio-good"]:checked ~ .form__label-select--radio[for="radio-good"] ,
 .form__input-radio[id="radio-bad"]:checked ~ .form__label-select--radio[for="radio-bad"] ,
 .form__input-radio[id="radio-neutral"]:checked ~ .form__label-select--radio[for="radio-neutral"] {
+
   &::before {
     background-color: $color-darkgrey;
     border-color: $color-form-main;
   }
 
   &:hover {
+
     &::before {
       background-color: $color-darkgrey;
       border-color: $color-form-main-hover;
     }
+
   }
 
   &:active {
+
     &::before {
       background-color: rgba($color-darkgrey, 0.3);
       border-color: $color-form-main-active;
     }
+
   }
+
 }
 
 .form__input-checkbox {
@@ -212,16 +223,21 @@
   }
 
   &:hover {
+
     &::before {
       background-color: $color-form-main-hover;
     }
+
   }
 
   &:active {
+
     &::before {
       background-color: $color-form-main-active;
     }
+
   }
+
 }
 
 .form__input-checkbox[id="devil-bridge"]:checked ~ .form__label-select--ckeckbox[for="devil-bridge"] ,
@@ -317,6 +333,7 @@
     text-transform: none;
     color: black;
   }
+
 }
 
 .form__button {
@@ -371,6 +388,7 @@
     &:nth-child(5) {
       margin-bottom: 55px;
     }
+
   }
 
   .form__heading {
@@ -424,6 +442,7 @@
       right: 0;
       background-color: $color-form-main-hover;
     }
+
   }
 
   .form__field--contacts {
@@ -490,6 +509,7 @@
       right: 0;
       background-color: $color-form-main-hover;
     }
+
   }
 
   .form__attraction {
@@ -519,6 +539,7 @@
     &:nth-child(3) {
       order: -1;
     }
+
   }
 
   .form__heading--textarea {
@@ -544,6 +565,7 @@
       right: 0;
       background-color: $color-form-main-hover;
     }
+
   }
 
   .form__text-area {
@@ -566,6 +588,7 @@
     align-self: flex-end;
     margin-bottom: 14px;
   }
+
 }
 
 @media #{$desktop-widths} {
@@ -584,6 +607,7 @@
     &:nth-child(3) {
       margin-bottom: 48px;
     }
+
   }
 
   .form__heading--names {
@@ -628,6 +652,7 @@
       right: 0;
       background-color: $color-form-main-hover;
     }
+
   }
 
   .form__block--contacts {
@@ -655,6 +680,7 @@
       &:after {
         right: 80px;
       }
+
     }
 
   }
@@ -706,6 +732,7 @@
       right: 0;
       background-color: $color-form-main-hover;
     }
+
   }
 
   .form__attraction {
@@ -738,6 +765,7 @@
       width: 200px;
       margin-left: auto;
     }
+
   }
 
   .form__heading--textarea {
